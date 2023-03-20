@@ -53,39 +53,36 @@
               >
                 To-Do
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="yesterday.html">Yesterday</a></li>
-                <li><a class="dropdown-item" href="today.html">Today</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="tomorrow.html">Tomorrow</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
+              
           </form>
         </div>
       </div>
     </nav>
-    <div>
-      <p class="text-center">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt minus
-        natus maxime quod laboriosam repellendus, officia veritatis recusandae
-        provident cupiditate atque. Animi minima autem ea ipsa adipisci
-        repudiandae, quisquam cupiditate.
-      </p>
+    <header>
+      <h1>Task List</h1>
+      <form id="new-task-form">
+        <input type="text" id="new-task-input" placeholder="What do you have planned"/>
+        <input type="Submit" id="new-task-submit" value="Add Task" />
+      </form>
+      <main>
+        <section class="task-list">
+          <h2>Tasks</h2>
+          <div id="tasks">
+            <!-- <div class="task">
+              <div class="content">
+                <input type="text" class="text" value="my shiny task" readonly />
+              </div>
+              <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </main>
       <i class="bi bi-balloon-heart-fill text-danger fs-4"></i>
-    </div>
+    </header>
+
   </body>
   <script src="./static/main.js"></script>
 </html>
